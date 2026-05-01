@@ -6,7 +6,7 @@
  *   irm  https://install.securyblack.dev/nexus-agent | iex           → install.ps1 (Windows)
  */
 
-const REPO_RAW = "https://raw.githubusercontent.com/securyblack/nexus-agent/main/scripts";
+const REPO_RAW = "https://raw.githubusercontent.com/securyblack/nexus-agent/master/scripts";
 
 export default {
   async fetch(req) {
