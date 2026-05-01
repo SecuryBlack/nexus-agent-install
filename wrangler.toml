@@ -2,6 +2,7 @@ name = "nexus-agent-install"
 main = "src/index.js"
 compatibility_date = "2025-01-01"
 
-[[routes]]
-pattern = "install.securyblack.dev/nexus-agent/*"
-zone_name = "securyblack.dev"
+# Custom domain route — uncomment once securyblack.dev is added to Cloudflare
+# [[routes]]
+# pattern = "install.securyblack.dev/nexus-agent/*"
+# zone_name = "securyblack.dev"
