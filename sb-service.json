@@ -1,0 +1,8 @@
+{
+  "name": "Nexus Agent Installer",
+  "description": "Cloudflare Worker para la instalación desatendida del Nexus Agent",
+  "type": "wrangler",
+  "role": "installer",
+  "port": 8786,
+  "start": "npx wrangler dev --port 8786"
+}
