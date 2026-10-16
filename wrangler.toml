@@ -2,7 +2,12 @@ name = "nexus-agent-install"
 main = "src/index.js"
 compatibility_date = "2025-01-01"
 
-# Custom domain route — uncomment once securyblack.dev is added to Cloudflare
-# [[routes]]
-# pattern = "install.securyblack.dev/nexus-agent/*"
-# zone_name = "securyblack.dev"
+# The panel generates install.securyblack.com/linux and /windows; this Worker
+# answers every path (Windows is picked by User-Agent or the path).
+[[routes]]
+pattern = "install.securyblack.com/*"
+zone_name = "securyblack.com"
+
+[[analytics_engine_datasets]]
+binding = "INSTALLS"
+dataset = "nexusagent_installs"
